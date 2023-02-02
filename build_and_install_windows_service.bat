@@ -32,5 +32,13 @@ call pyinstaller server.spec --noconfirm
 echo "[*] Building windows_service executable folder..."
 call pyinstaller windows_service.spec --noconfirm
 
-echo "[OK] Windows service install folder successfully built"
+echo "[OK] Windows service successfully built"
+
+echo "[*] Installing as windows service with autostartup ..."
+call app\dist\windows_service\windows_service.exe --startup auto install
+
+echo "[*] Starting service..."
+call app\dist\windows_service\windows_service.exe start
+
+echo "[OK] Service started."
 cd ..
