@@ -7,7 +7,7 @@ consumers.
 This approach allows to the API endpoints to be accessed via IIS redirections of the trafic reaching the server from
 outside, or from the processes running in the same machine via localhost network loopback. 
 
-## Idea description
+# Description
 This approach is an adaptation of the implementation done here:
 
 https://github.com/msminhas93/fastapi-windows-service
@@ -25,7 +25,7 @@ In principle, any FastAPI application developed could be installed, executed and
 this approach.
 
 
-## Requirements
+# Requirements
 
 **Python 3.11** installed (it is possible that it works from Python 3.9)
 
@@ -33,7 +33,7 @@ this approach.
 
 
 
-## Steps for installing the service
+# Steps for installing the service
 1. Clone this repo
 2. From the root of the repo directory run the script **build_and_install_windows_service.bat** with Administration privileges
 
@@ -48,3 +48,6 @@ The Uvicorn server would be available at localhost:5000.
 
 You can check the API swagger at localhost:5000/docs.
 
+# Uninstalling the service
+From the root of the repository in a PowerShell terminal, run script **uninstall_windows_service.ps1** with elevated
+privileges.
