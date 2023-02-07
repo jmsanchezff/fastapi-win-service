@@ -1,11 +1,11 @@
 @echo off
 
-set EXPECTED_PYTHON_VERSION=Python 3.11
+set EXPECTED_PYTHON_VERSION=Python 3.7.9
 
 echo "[*] Checking python version..."
 for /f "tokens=*" %%g in ('python --version') do (SET PYTHON_VERSION=%%g)
 
-if not "x%PYTHON_VERSION:Python 3.11=%"=="x%PYTHON_VERSION%" (
+if not "x%PYTHON_VERSION:Python 3.7.9=%"=="x%PYTHON_VERSION%" (
     echo "[OK] %PYTHON_VERSION% found"
 ) else (
     echo "[ERROR] Unexpected python version found (%PYTHON_VERSION%). Expected %EXPECTED_PYTHON_VERSION%.X"

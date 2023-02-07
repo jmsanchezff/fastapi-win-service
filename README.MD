@@ -27,7 +27,7 @@ this approach.
 
 # Requirements
 
-**Python 3.11** installed (it is possible that it works from Python 3.9)
+**Python 3.7.9** installed
 
 **Administration privileges** on the server machine
 

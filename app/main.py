@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File
+from fastapi import FastAPI
 from enum import Enum
 
 

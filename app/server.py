@@ -1,4 +1,5 @@
-from typing import Literal
+# from typing import Literal  # -> Valid only from Python 3.8
+from typing_extensions import Literal  # -> Valid from Python 3.7.9
 
 import uvicorn
 from multiprocessing import cpu_count, freeze_support

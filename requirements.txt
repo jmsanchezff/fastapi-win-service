@@ -3,3 +3,4 @@ fastapi >=0.89.0, <0.90.0
 psutil >=5.9.4, <5.10.0
 pywin32 ==305
 pyinstaller >=5.7.0, <5.8.0
+typing-extensions >=4.4.0, <4.5.0
