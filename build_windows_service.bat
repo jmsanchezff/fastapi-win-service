@@ -38,7 +38,7 @@ cd ..
 
 echo "[*] Creating package zip file ..."
 tar -acf fastapi_win_service.zip "app/dist" "install_windows_service.bat" "uninstall_windows_service.ps1" && (
-    echo "[OK] Package zip file created at ./app/fastapi_win_service.zip"
+    echo "[OK] Package zip file created fastapi_win_service.zip"
 ) || (
     echo "[ERROR] Failed to create zip package"
 )
